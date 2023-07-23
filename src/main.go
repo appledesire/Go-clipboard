@@ -16,6 +16,7 @@ var (
 )
 
 func main() {
+
 	http.HandleFunc("/clipboard", handleClipboard)
 	fmt.Println("Server is runing on Port 8080:")
 	log.Fatal(http.ListenAndServe(":8080", nil))
